@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_stats"
+        android:icon="@drawable/ic_baseline_assessment"
+        android:title="Status" />
+    <item
+        android:id="@+id/ic_map"
+        android:icon="@drawable/ic_baseline_map"
+        android:title="Map" />
+    <item
+        android:id="@+id/ic_news"
+        android:icon="@drawable/ic_baseline_announcement"
+        android:title="News" />
+    <item
+        android:id="@+id/ic_callNumbers"
+        android:icon="@drawable/ic_baseline_perm_phone_msg"
+        android:title="Numbers" />
+
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvNews"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="15dp"
+    android:orientation="horizontal"
+    app:cardElevation="10dp">
+
+
+    <ImageView
+        android:id="@+id/ivNotice"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/tvTextNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="160dp"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            tools:text="Texto de la noticia" />
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:text="Categoria: " />
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/tvNewCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:layout_marginTop="2dp"
+            tools:text="Categoria" />
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+

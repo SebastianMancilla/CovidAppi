@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailNewsActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/tvTitleDNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="TITULO NOTICIA"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivDetailNews"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"/>
+
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/tvTextNewsCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                tools:text="Texto noticia"/>
+
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbDetail"
+            android:elevation="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/Backbtn"
+            android:src="@drawable/ic_rrow_back"
+            android:layout_margin="16dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
